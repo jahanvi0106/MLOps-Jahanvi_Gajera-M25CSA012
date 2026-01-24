@@ -111,10 +111,16 @@ All valid experiments achieved **> 80% accuracy**.
 ## Graphs
 
 ### Accuracy Comparison for MNIST
-![Accuracy Comparison](accuracy_comparison.png)
+![Accuracy Comparison](mnist2.png)
 
-### Training Time Comparison
-![Training Time Comparison](training_time_comparison.png)
+### Accuracy Comparison for FashionMNIST
+![Accuracy Comparison](fminst2.png)
+
+### Accuracy Comparison for FashionMNIST between CPU and GPU
+![Accuracy Comparison](Acc_cpuVSgpu.png)
+
+### Training Time Comparison FashionMNIST between CPU and GPU
+![Training Time Comparison](time_cpuVSgpu.png)
 
 ---
 
