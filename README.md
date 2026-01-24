@@ -1,29 +1,21 @@
 # MLOps-Jahanvi_Gajera-M25CSA012
 # DLOPs Assignment–1
 
-**Course:** Deep Learning Operations (DLOPs)  
+**Course:** ML-DL-OPs  
 **Assignment:** 1  
-**Student Name:** Firstname Surname  
-**Roll Number:** B22CSXXX  
 
 ---
 
-## 📌 Repository Details
+## Repository Details
 
-- **Repository Name:** `MLOps-Name-rollNumber`
+- **Repository Name:** `MLOps-Jahanvi_Gajera-M25CSA012`
 - **Branch:** `Assignment 1`
 - **Framework:** PyTorch
 - **Language:** Python
-- **Execution Platform:** Google Colab
 
 ---
 
-## 📂 Repository Structure
-
-
----
-
-## 📊 Assignment Overview
+## Assignment Overview
 
 This assignment involves training and evaluating deep learning models on **MNIST** and **FashionMNIST** datasets using different hyperparameters and computational settings. The performance is analyzed based on:
 
@@ -34,7 +26,7 @@ This assignment involves training and evaluating deep learning models on **MNIST
 
 ---
 
-## 🧠 Models Used
+## Models Used
 
 - **ResNet-18** (pretrained = False)
 - **ResNet-50** (pretrained = False)
@@ -42,7 +34,7 @@ This assignment involves training and evaluating deep learning models on **MNIST
 
 ---
 
-## 📁 Datasets
+## Datasets
 
 - MNIST
 - FashionMNIST
@@ -54,7 +46,7 @@ This assignment involves training and evaluating deep learning models on **MNIST
 
 ---
 
-## ⚙️ Training Configuration
+## Training Configuration
 
 - **Batch Sizes:** 16, 32  
 - **Optimizers:** SGD, Adam  
@@ -67,7 +59,7 @@ All valid experiments achieved **> 80% accuracy**.
 
 ---
 
-## 📈 Q1(a): Deep Learning Model Results
+## Q1(a): Deep Learning Model Results
 
 ### Test Classification Accuracy (%) for MNIST
 
@@ -92,7 +84,7 @@ All valid experiments achieved **> 80% accuracy**.
 | 32 | Adam | 0.0001 | 91.13% | 92.07% |
 ---
 
-## 🧪 Q1(b): SVM Results
+## Q1(b): SVM Results
 
 | Kernel | Dataset | Test Accuracy (%) | Training Time (ms) |
 |------|---------|------------------|--------------------|
@@ -103,7 +95,7 @@ All valid experiments achieved **> 80% accuracy**.
 
 ---
 
-## 💻 Q2: CPU vs GPU Performance (FashionMNIST)
+## Q2: CPU vs GPU Performance (FashionMNIST)
 
 ### Accuracy Comparison
 
@@ -116,7 +108,7 @@ All valid experiments achieved **> 80% accuracy**.
 
 ---
 
-## 📊 Graphs
+## Graphs
 
 ### Accuracy Comparison for MNIST
 ![Accuracy Comparison](accuracy_comparison.png)
@@ -126,7 +118,7 @@ All valid experiments achieved **> 80% accuracy**.
 
 ---
 
-## 📄 Report
+## Report
 
 - **File Name:** `RollNumber_Name_Ass1.pdf`
 - Contains detailed analysis, tables, and plots.
@@ -135,5 +127,4 @@ All valid experiments achieved **> 80% accuracy**.
 
 ## 🔗 Google Colab Link (Already Executed)
 
-👉 **Colab Notebook:**  
-
+**Colab Notebook:** https://colab.research.google.com/drive/15CBtp3gPoqMVlrm5LhQDBEndz02S7yMQ?usp=sharing
