@@ -124,6 +124,9 @@ All valid experiments achieved **> 80% accuracy**.
 
 ---
 
+## Trained Model link
+https://drive.google.com/drive/folders/1r11-r3Ep8wnhW4qG3UsfrKg93nVIiQxE?usp=sharing
+
 ## 🔗 Google Colab Link (Already Executed)
 
 **Colab Notebook:** https://colab.research.google.com/drive/15CBtp3gPoqMVlrm5LhQDBEndz02S7yMQ?usp=sharing
