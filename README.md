@@ -124,13 +124,6 @@ All valid experiments achieved **> 80% accuracy**.
 
 ---
 
-## Report
-
-- **File Name:** `RollNumber_Name_Ass1.pdf`
-- Contains detailed analysis, tables, and plots.
-
----
-
 ## 🔗 Google Colab Link (Already Executed)
 
 **Colab Notebook:** https://colab.research.google.com/drive/15CBtp3gPoqMVlrm5LhQDBEndz02S7yMQ?usp=sharing
