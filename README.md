@@ -59,7 +59,7 @@ All valid experiments achieved **> 80% accuracy**.
 
 ---
 
-## Q1(a): Deep Learning Model Results
+## Q1(a): Model Results
 
 ### Test Classification Accuracy (%) for MNIST
 
