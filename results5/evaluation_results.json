@@ -1,0 +1,68 @@
+{
+    "eval_loss": 3.234408378601074,
+    "accuracy": 0.144375,
+    "f1_weighted": 0.14414630166148387,
+    "classification_report": {
+        "children": {
+            "precision": 0.0410958904109589,
+            "recall": 0.03,
+            "f1-score": 0.034682080924855495,
+            "support": 200.0
+        },
+        "poetry": {
+            "precision": 0.06832298136645963,
+            "recall": 0.055,
+            "f1-score": 0.060941828254847646,
+            "support": 200.0
+        },
+        "fantasy_paranormal": {
+            "precision": 0.12041884816753927,
+            "recall": 0.23,
+            "f1-score": 0.15807560137457044,
+            "support": 200.0
+        },
+        "history_biography": {
+            "precision": 0.55625,
+            "recall": 0.445,
+            "f1-score": 0.49444444444444446,
+            "support": 200.0
+        },
+        "young_adult": {
+            "precision": 0.2692307692307692,
+            "recall": 0.245,
+            "f1-score": 0.25654450261780104,
+            "support": 200.0
+        },
+        "mystery_thriller_crime": {
+            "precision": 0.029239766081871343,
+            "recall": 0.025,
+            "f1-score": 0.026954177897574122,
+            "support": 200.0
+        },
+        "comics_graphic": {
+            "precision": 0.10747663551401869,
+            "recall": 0.115,
+            "f1-score": 0.11111111111111112,
+            "support": 200.0
+        },
+        "romance": {
+            "precision": 0.010869565217391304,
+            "recall": 0.01,
+            "f1-score": 0.010416666666666666,
+            "support": 200.0
+        },
+        "accuracy": 0.144375,
+        "macro avg": {
+            "precision": 0.15036305699862604,
+            "recall": 0.144375,
+            "f1-score": 0.1441463016614839,
+            "support": 1600.0
+        },
+        "weighted avg": {
+            "precision": 0.15036305699862604,
+            "recall": 0.144375,
+            "f1-score": 0.14414630166148387,
+            "support": 1600.0
+        }
+    }
+}
