@@ -65,4 +65,4 @@ Minor differences may occur due to environment configuration or random seed vari
 
 ```bash
 docker build -f Dockerfile.train -t hf-train .
-docker run --rm hf-train
+docker run  hf-train
