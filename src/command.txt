@@ -1,0 +1,14 @@
+
+## to run training model program
+
+docker run --rm -it \
+-e HF_TOKEN=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 \
+-v $(pwd):/app \
+m25csa012_train python src/train.py
+
+##to evaluate from hugging face
+
+docker run --rm -it \
+-e HF_TOKEN=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 \
+-v $(pwd):/app \
+m25csa012_eval python src/evaluate.py
