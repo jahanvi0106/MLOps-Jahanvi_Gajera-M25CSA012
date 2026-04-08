@@ -26,24 +26,6 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 How to Run
-
-### ▶️ Q1: ViT + LoRA Experiments
-
-```bash
-python Que1/train.py
-python Que1/evaluate.py
-```
-
----
-
-### ▶️ Q2: Adversarial Attacks & Detection
-
-```bash
-python Que2.py
-```
-
----
 
 ## 📊 Results
 
