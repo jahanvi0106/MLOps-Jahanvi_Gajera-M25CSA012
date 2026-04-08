@@ -1,0 +1,9 @@
+# Exclude everything by default
+*
+
+# Include log files
+!*.log
+!.gitignore
+
+# Include directories that might contain log files
+!*/

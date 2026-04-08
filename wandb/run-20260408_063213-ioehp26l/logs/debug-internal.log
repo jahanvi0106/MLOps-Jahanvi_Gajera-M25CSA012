@@ -1,0 +1,19 @@
+{"time":"2026-04-08T06:32:13.296871999+05:30","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2026-04-08T06:32:13.898639242+05:30","level":"INFO","msg":"stream: created new stream","id":"ioehp26l"}
+{"time":"2026-04-08T06:32:13.898701799+05:30","level":"INFO","msg":"handler: started","stream_id":"ioehp26l"}
+{"time":"2026-04-08T06:32:13.898801887+05:30","level":"INFO","msg":"stream: started","id":"ioehp26l"}
+{"time":"2026-04-08T06:32:13.8988197+05:30","level":"INFO","msg":"writer: started","stream_id":"ioehp26l"}
+{"time":"2026-04-08T06:32:13.898827965+05:30","level":"INFO","msg":"sender: started","stream_id":"ioehp26l"}
+{"time":"2026-04-08T07:30:32.037748456+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2026-04-08T07:31:04.179134091+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2026-04-08T07:31:25.653754937+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":1593}
+{"time":"2026-04-08T07:31:26.076346926+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/m25csa012-iit-jodhpur/dlops-assignment5/ioehp26l/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2026-04-08T07:31:29.242425136+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/graphql","body":"{\"errors\":[{\"message\":\"context deadline exceeded\",\"path\":[\"project\",\"run\"]}],\"data\":{\"project\":{\"run\":null}}}"}
+{"time":"2026-04-08T07:31:42.084584617+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":7}
+{"time":"2026-04-08T07:39:47.329935716+05:30","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/graphql","body":"\n<html><head>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<title>502 Server Error</title>\n</head>\n<body text=#000000 bgcolor=#ffffff>\n<h1>Error: Server Error</h1>\n<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>\n<h2></h2>\n</body></html>\n"}
+{"time":"2026-04-08T13:47:43.700417234+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-04-08T13:47:44.197998337+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-04-08T13:47:44.199977474+05:30","level":"INFO","msg":"stream: closing","id":"ioehp26l"}
+{"time":"2026-04-08T13:47:44.199995608+05:30","level":"INFO","msg":"handler: closed","stream_id":"ioehp26l"}
+{"time":"2026-04-08T13:47:44.200059188+05:30","level":"INFO","msg":"sender: closed","stream_id":"ioehp26l"}
+{"time":"2026-04-08T13:47:44.200067934+05:30","level":"INFO","msg":"stream: closed","id":"ioehp26l"}

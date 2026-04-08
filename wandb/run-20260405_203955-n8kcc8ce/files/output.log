@@ -1,0 +1,76 @@
+Loading weights: 100%|██████████| 200/200 [00:00<00:00, 11788.71it/s]
+[1mViTForImageClassification LOAD REPORT[0m from: cs-giung/vit-small-patch16-imagenet21k-augreg
+Key               | Status   |
+------------------+----------+---------------------------------------------------------------------------------------------
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([21843]) vs model:torch.Size([100])
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([21843, 384]) vs model:torch.Size([100, 384])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+trainable params: 149,092 || all params: 21,853,256 || trainable%: 0.6822
+Experiment: lora_r4_a2
+Total params: 21,853,256
+Trainable params: 149,092
+Trainable %: 0.68%
+
+Epoch 1/10
+Training: 100%|██████████| 704/704 [44:13<00:00,  3.77s/it]
+Validation: 100%|██████████| 79/79 [01:33<00:00,  1.18s/it]
+Train Loss: 3.4852, Train Acc: 20.60%
+Val Loss: 2.3499, Val Acc: 41.78%
+
+Epoch 2/10
+Training: 100%|██████████| 704/704 [46:35<00:00,  3.97s/it]
+Validation: 100%|██████████| 79/79 [01:35<00:00,  1.21s/it]
+Train Loss: 1.7491, Train Acc: 54.87%
+Val Loss: 1.2858, Val Acc: 66.36%
+
+Epoch 3/10
+Training: 100%|██████████| 704/704 [46:04<00:00,  3.93s/it]
+Validation: 100%|██████████| 79/79 [01:37<00:00,  1.23s/it]
+Train Loss: 1.0261, Train Acc: 72.11%
+Val Loss: 0.8732, Val Acc: 75.24%
+
+Epoch 4/10
+Training: 100%|██████████| 704/704 [45:28<00:00,  3.88s/it]
+Validation: 100%|██████████| 79/79 [01:40<00:00,  1.28s/it]
+Train Loss: 0.7523, Train Acc: 78.81%
+Val Loss: 0.7195, Val Acc: 78.88%
+
+Epoch 5/10
+Training: 100%|██████████| 704/704 [49:24<00:00,  4.21s/it]  
+Validation: 100%|██████████| 79/79 [01:35<00:00,  1.21s/it]
+Train Loss: 0.6338, Train Acc: 81.60%
+Val Loss: 0.6479, Val Acc: 80.64%
+
+Epoch 6/10
+Training: 100%|██████████| 704/704 [45:26<00:00,  3.87s/it]
+Validation: 100%|██████████| 79/79 [01:30<00:00,  1.15s/it]
+Train Loss: 0.5661, Train Acc: 83.33%
+Val Loss: 0.6118, Val Acc: 81.36%
+
+Epoch 7/10
+Training: 100%|██████████| 704/704 [44:50<00:00,  3.82s/it]
+Validation: 100%|██████████| 79/79 [01:36<00:00,  1.22s/it]
+Train Loss: 0.5248, Train Acc: 84.53%
+Val Loss: 0.5917, Val Acc: 81.76%
+
+Epoch 8/10
+Training: 100%|██████████| 704/704 [45:37<00:00,  3.89s/it]
+Validation: 100%|██████████| 79/79 [01:34<00:00,  1.20s/it]
+Train Loss: 0.5005, Train Acc: 85.18%
+Val Loss: 0.5796, Val Acc: 82.30%
+
+Epoch 9/10
+Training: 100%|██████████| 704/704 [45:23<00:00,  3.87s/it]
+Validation: 100%|██████████| 79/79 [01:38<00:00,  1.24s/it]
+Train Loss: 0.4876, Train Acc: 85.54%
+Val Loss: 0.5749, Val Acc: 82.24%
+
+Epoch 10/10
+Training: 100%|██████████| 704/704 [43:15<00:00,  3.69s/it]
+Validation: 100%|██████████| 79/79 [01:25<00:00,  1.08s/it]
+Train Loss: 0.4804, Train Acc: 85.75%
+Val Loss: 0.5740, Val Acc: 82.30%
+Testing: 100%|██████████| 157/157 [02:53<00:00,  1.10s/it]
+Test Accuracy: 81.50%

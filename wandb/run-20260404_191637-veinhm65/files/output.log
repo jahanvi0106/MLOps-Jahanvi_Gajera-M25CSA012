@@ -1,0 +1,17 @@
+Loading weights: 100%|██████████| 200/200 [00:00<00:00, 11880.03it/s]
+[1mViTForImageClassification LOAD REPORT[0m from: cs-giung/vit-small-patch16-imagenet21k-augreg
+Key               | Status   |
+------------------+----------+---------------------------------------------------------------------------------------------
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([21843]) vs model:torch.Size([100])
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([21843, 384]) vs model:torch.Size([100, 384])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+trainable params: 93,796 || all params: 21,797,960 || trainable%: 0.4303
+Experiment: lora_r2_a8
+Total params: 21,797,960
+Trainable params: 93,796
+Trainable %: 0.43%
+
+Epoch 1/10
+Training:  98%|█████████▊| 690/704 [37:34<00:43,  3.12s/it]

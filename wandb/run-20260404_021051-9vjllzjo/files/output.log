@@ -1,0 +1,11 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████| 200/200 [00:00<00:00, 12975.02it/s]
+[1mViTForImageClassification LOAD REPORT[0m from: WinKawaks/vit-small-patch16-224
+Key               | Status   |
+------------------+----------+--------------------------------------------------------------------------------------------
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000]) vs model:torch.Size([100])
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000, 384]) vs model:torch.Size([100, 384])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+Epoch 1 Training:  72%|███████▏  | 565/782 [45:13<17:46,  4.91s/it]  

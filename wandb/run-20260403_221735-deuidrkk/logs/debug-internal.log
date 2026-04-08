@@ -1,0 +1,11 @@
+{"time":"2026-04-03T22:17:36.030806553+05:30","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2026-04-03T22:17:36.476279206+05:30","level":"INFO","msg":"stream: created new stream","id":"deuidrkk"}
+{"time":"2026-04-03T22:17:36.47632399+05:30","level":"INFO","msg":"handler: started","stream_id":"deuidrkk"}
+{"time":"2026-04-03T22:17:36.476423247+05:30","level":"INFO","msg":"stream: started","id":"deuidrkk"}
+{"time":"2026-04-03T22:17:36.476437414+05:30","level":"INFO","msg":"writer: started","stream_id":"deuidrkk"}
+{"time":"2026-04-03T22:17:36.476458864+05:30","level":"INFO","msg":"sender: started","stream_id":"deuidrkk"}
+{"time":"2026-04-03T22:17:37.664634338+05:30","level":"INFO","msg":"stream: closing","id":"deuidrkk"}
+{"time":"2026-04-03T22:17:38.938860971+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-04-03T22:17:39.394609657+05:30","level":"INFO","msg":"handler: closed","stream_id":"deuidrkk"}
+{"time":"2026-04-03T22:17:39.394677775+05:30","level":"INFO","msg":"sender: closed","stream_id":"deuidrkk"}
+{"time":"2026-04-03T22:17:39.394689738+05:30","level":"INFO","msg":"stream: closed","id":"deuidrkk"}

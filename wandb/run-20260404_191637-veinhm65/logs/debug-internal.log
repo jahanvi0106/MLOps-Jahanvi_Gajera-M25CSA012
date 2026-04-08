@@ -1,0 +1,6 @@
+{"time":"2026-04-04T19:16:37.551574482+05:30","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2026-04-04T19:16:37.981493199+05:30","level":"INFO","msg":"stream: created new stream","id":"veinhm65"}
+{"time":"2026-04-04T19:16:37.981554073+05:30","level":"INFO","msg":"handler: started","stream_id":"veinhm65"}
+{"time":"2026-04-04T19:16:37.981677955+05:30","level":"INFO","msg":"stream: started","id":"veinhm65"}
+{"time":"2026-04-04T19:16:37.981695127+05:30","level":"INFO","msg":"writer: started","stream_id":"veinhm65"}
+{"time":"2026-04-04T19:16:37.981714573+05:30","level":"INFO","msg":"sender: started","stream_id":"veinhm65"}

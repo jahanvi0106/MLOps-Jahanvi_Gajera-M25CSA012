@@ -1,0 +1,15 @@
+config.json: 69.7kB [00:00, 101MB/s]
+Traceback (most recent call last):
+  File "/data/m25_jahanvi/Assign5/Que1.py", line 353, in <module>
+    run_baseline(trainloader, testloader, classes)
+  File "/data/m25_jahanvi/Assign5/Que1.py", line 161, in run_baseline
+    model = ViTForImageClassification.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 2035, in __getattribute__
+    requires_backends(cls, cls._backends)
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/utils/import_utils.py", line 2021, in requires_backends
+    raise ImportError("".join(failed))
+ImportError:
+ViTForImageClassification requires the PyTorch library but it was not found in your environment. Check out the instructions on the
+installation page: https://pytorch.org/get-started/locally/ and follow the ones that match your environment.
+Please note that you may need to restart your runtime after installation.

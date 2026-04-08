@@ -1,0 +1,15 @@
+{"time":"2026-04-04T03:55:41.989794633+05:30","level":"INFO","msg":"stream: starting","core version":"0.22.3"}
+{"time":"2026-04-04T03:55:42.432090001+05:30","level":"INFO","msg":"stream: created new stream","id":"hn01tyit"}
+{"time":"2026-04-04T03:55:42.432182856+05:30","level":"INFO","msg":"handler: started","stream_id":"hn01tyit"}
+{"time":"2026-04-04T03:55:42.432310426+05:30","level":"INFO","msg":"stream: started","id":"hn01tyit"}
+{"time":"2026-04-04T03:55:42.432337797+05:30","level":"INFO","msg":"writer: started","stream_id":"hn01tyit"}
+{"time":"2026-04-04T03:55:42.432367814+05:30","level":"INFO","msg":"sender: started","stream_id":"hn01tyit"}
+{"time":"2026-04-04T04:12:59.057553446+05:30","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/files/m25csa012-iit-jodhpur/DLOps-Ass5-Q1/hn01tyit/file_stream"}
+{"time":"2026-04-04T04:12:59.057631883+05:30","level":"ERROR+4","msg":"filestream: fatal error: filestream: failed to upload: 404 Not Found path=files/m25csa012-iit-jodhpur/DLOps-Ass5-Q1/hn01tyit/file_stream: {\"error\":\"run DLOps-Ass5-Q1/hn01tyit not found while streaming file\"}"}
+{"time":"2026-04-04T07:38:09.010066811+05:30","level":"INFO","msg":"stream: closing","id":"hn01tyit"}
+{"time":"2026-04-04T07:38:09.407525873+05:30","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2026-04-04T07:38:09.407615382+05:30","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project m25csa012-iit-jodhpur/DLOps-Ass5-Q1 not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2026-04-04T07:38:09.409013162+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-04-04T07:38:09.409044431+05:30","level":"INFO","msg":"handler: closed","stream_id":"hn01tyit"}
+{"time":"2026-04-04T07:38:09.409127798+05:30","level":"INFO","msg":"sender: closed","stream_id":"hn01tyit"}
+{"time":"2026-04-04T07:38:09.409139881+05:30","level":"INFO","msg":"stream: closed","id":"hn01tyit"}

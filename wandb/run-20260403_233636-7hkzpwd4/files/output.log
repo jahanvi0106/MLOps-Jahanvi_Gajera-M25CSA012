@@ -1,0 +1,96 @@
+model.safetensors: 100%|█████████████████████████████████████████████████| 88.2M/88.2M [00:04<00:00, 22.0MB/s]
+Loading weights: 100%|███████████████████████████████████████████████████| 200/200 [00:00<00:00, 10356.69it/s]
+[1mViTForImageClassification LOAD REPORT[0m from: WinKawaks/vit-small-patch16-224
+Key               | Status   |
+------------------+----------+--------------------------------------------------------------------------------------------
+classifier.weight | [33mMISMATCH[0m | Reinit due to size mismatch - ckpt: torch.Size([1000, 384]) vs model:torch.Size([100, 384])
+classifier.bias   | [33mMISMATCH[0m | Reinit due to size mismatch - ckpt: torch.Size([1000]) vs model:torch.Size([100])
+
+Notes:
+- [33mMISMATCH:[0m	[3mckpt weights were loaded, but they did not match the original empty weight shapes.[0m
+Epoch 1 Training:   1%|▍                                                      | 6/782 [00:22<48:31,  3.75s/it]
+Traceback (most recent call last):
+  File "/data/m25_jahanvi/Assign5/Que1.py", line 354, in <module>
+    run_baseline(trainloader, testloader, classes)
+  File "/data/m25_jahanvi/Assign5/Que1.py", line 188, in run_baseline
+    train_loss, train_acc, lora_grad_mean = train_epoch(model, trainloader, criterion, optimizer, epoch, log_lora_grads=False)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/Assign5/Que1.py", line 90, in train_epoch
+    outputs = model(inputs).logits
+              ^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/utils/generic.py", line 876, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/models/vit/modeling_vit.py", line 634, in forward
+    outputs: BaseModelOutputWithPooling = self.vit(
+                                          ^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/utils/generic.py", line 952, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/utils/output_capturing.py", line 248, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/models/vit/modeling_vit.py", line 452, in forward
+    encoder_outputs: BaseModelOutput = self.encoder(embedding_output)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/models/vit/modeling_vit.py", line 362, in forward
+    hidden_states = layer_module(hidden_states, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/models/vit/modeling_vit.py", line 334, in forward
+    attention_output = self.attention(hidden_states_norm, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/models/vit/modeling_vit.py", line 282, in forward
+    self_attn_output, _ = self.attention(hidden_states, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/models/vit/modeling_vit.py", line 230, in forward
+    query_layer = self.query(hidden_states).view(*new_shape).transpose(1, 2)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/linear.py", line 130, in forward
+    def forward(self, input: Tensor) -> Tensor:
+
+KeyboardInterrupt

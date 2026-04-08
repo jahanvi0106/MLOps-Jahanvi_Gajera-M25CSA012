@@ -1,0 +1,21 @@
+2026-04-05 06:02:19,880 INFO    MainThread:3036966 [wandb_init.py:setup_run_log_directory():706] Logging user logs to /data/m25_jahanvi/Assign5/wandb/run-20260405_060219-u8mxa60g/logs/debug.log
+2026-04-05 06:02:19,880 INFO    MainThread:3036966 [wandb_init.py:setup_run_log_directory():707] Logging internal logs to /data/m25_jahanvi/Assign5/wandb/run-20260405_060219-u8mxa60g/logs/debug-internal.log
+2026-04-05 06:02:19,880 INFO    MainThread:3036966 [wandb_init.py:init():833] calling init triggers
+2026-04-05 06:02:19,880 INFO    MainThread:3036966 [wandb_init.py:init():838] wandb.init called with sweep_config: {}
+config: {'rank': 2, 'alpha': 4, 'dropout': 0.1, 'model': 'ViT-S', 'dataset': 'CIFAR-100', '_wandb': {}}
+2026-04-05 06:02:19,880 INFO    MainThread:3036966 [wandb_init.py:init():881] starting backend
+2026-04-05 06:02:19,880 INFO    MainThread:3036966 [wandb_init.py:init():884] sending inform_init request
+2026-04-05 06:02:19,881 INFO    MainThread:3036966 [wandb_init.py:init():892] backend started and connected
+2026-04-05 06:02:19,882 INFO    MainThread:3036966 [wandb_init.py:init():962] updated telemetry
+2026-04-05 06:02:19,882 INFO    MainThread:3036966 [wandb_init.py:init():986] communicating run to backend with 90.0 second timeout
+2026-04-05 06:02:20,824 INFO    MainThread:3036966 [wandb_init.py:init():1033] starting run threads in backend
+2026-04-05 06:02:20,911 INFO    MainThread:3036966 [wandb_run.py:_console_start():2506] atexit reg
+2026-04-05 06:02:20,911 INFO    MainThread:3036966 [wandb_run.py:_redirect():2354] redirect: wrap_raw
+2026-04-05 06:02:20,911 INFO    MainThread:3036966 [wandb_run.py:_redirect():2423] Wrapping output streams.
+2026-04-05 06:02:20,911 INFO    MainThread:3036966 [wandb_run.py:_redirect():2446] Redirects installed.
+2026-04-05 06:02:20,912 INFO    MainThread:3036966 [wandb_init.py:init():1073] run started, returning control to user process
+2026-04-05 12:59:19,483 INFO    MainThread:3036966 [wandb_run.py:_finish():2272] finishing run m25csa012-iit-jodhpur/dlops-assignment5/u8mxa60g
+2026-04-05 12:59:19,483 INFO    MainThread:3036966 [wandb_run.py:_atexit_cleanup():2471] got exitcode: 0
+2026-04-05 12:59:19,483 INFO    MainThread:3036966 [wandb_run.py:_restore():2453] restore
+2026-04-05 12:59:19,484 INFO    MainThread:3036966 [wandb_run.py:_restore():2459] restore done
+2026-04-05 12:59:21,122 INFO    MainThread:3036966 [wandb_run.py:_footer_sync_info():3835] logging synced files

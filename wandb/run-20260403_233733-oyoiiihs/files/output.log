@@ -1,0 +1,12 @@
+Loading weights: 100%|██████████| 200/200 [00:00<00:00, 9455.58it/s]
+[1mViTForImageClassification LOAD REPORT[0m from: WinKawaks/vit-small-patch16-224
+Key               | Status   |
+------------------+----------+--------------------------------------------------------------------------------------------
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000, 384]) vs model:torch.Size([100, 384])
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000]) vs model:torch.Size([100])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+Epoch 1 Training: 100%|██████████| 782/782 [46:26<00:00,  3.56s/it]
+Epoch 1 Eval: 100%|██████████| 157/157 [03:04<00:00,  1.18s/it]
+Epoch 2 Training:  25%|██▍       | 194/782 [11:31<34:30,  3.52s/it]

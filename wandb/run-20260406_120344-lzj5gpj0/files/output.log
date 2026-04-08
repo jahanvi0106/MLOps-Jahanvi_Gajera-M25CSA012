@@ -1,0 +1,77 @@
+Loading weights: 100%|██████████| 200/200 [00:00<00:00, 9768.28it/s]
+[1mViTForImageClassification LOAD REPORT[0m from: cs-giung/vit-small-patch16-imagenet21k-augreg
+Key               | Status   |
+------------------+----------+---------------------------------------------------------------------------------------------
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([21843]) vs model:torch.Size([100])
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([21843, 384]) vs model:torch.Size([100, 384])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+trainable params: 149,092 || all params: 21,853,256 || trainable%: 0.6822
+Experiment: lora_r4_a8
+Total params: 21,853,256
+Trainable params: 149,092
+Trainable %: 0.68%
+
+Epoch 1/10
+Training: 100%|██████████| 704/704 [59:36<00:00,  5.08s/it]
+Validation: 100%|██████████| 79/79 [02:33<00:00,  1.95s/it]
+Train Loss: 3.3690, Train Acc: 22.75%
+Val Loss: 2.0713, Val Acc: 46.96%
+
+Epoch 2/10
+Training: 100%|██████████| 704/704 [1:11:24<00:00,  6.09s/it]
+Validation: 100%|██████████| 79/79 [02:34<00:00,  1.95s/it]
+Train Loss: 1.4253, Train Acc: 62.77%
+Val Loss: 0.9889, Val Acc: 73.36%
+
+Epoch 3/10
+Training: 100%|██████████| 704/704 [1:10:54<00:00,  6.04s/it]
+Validation: 100%|██████████| 79/79 [02:31<00:00,  1.92s/it]
+Train Loss: 0.7963, Train Acc: 77.81%
+Val Loss: 0.7051, Val Acc: 79.66%
+
+Epoch 4/10
+Training: 100%|██████████| 704/704 [1:12:21<00:00,  6.17s/it]
+Validation: 100%|██████████| 79/79 [02:39<00:00,  2.02s/it]
+Train Loss: 0.5982, Train Acc: 82.76%
+Val Loss: 0.6064, Val Acc: 81.66%
+
+Epoch 5/10
+Training: 100%|██████████| 704/704 [1:18:28<00:00,  6.69s/it]
+Validation: 100%|██████████| 79/79 [04:59<00:00,  3.79s/it]
+Train Loss: 0.5056, Train Acc: 85.16%
+Val Loss: 0.5592, Val Acc: 83.12%
+
+Epoch 6/10
+Training: 100%|██████████| 704/704 [1:25:39<00:00,  7.30s/it]
+Validation: 100%|██████████| 79/79 [02:47<00:00,  2.12s/it]
+Train Loss: 0.4517, Train Acc: 86.59%
+Val Loss: 0.5374, Val Acc: 83.48%
+
+Epoch 7/10
+Training:  66%|██████▌   | 465/704 [56:08<37:29,  9.41s/it]wandb: WARNING Fatal error while uploading data. Some run data will not be synced, but it will still be written to disk. Use `wandb sync` at the end of the run to try uploading.
+Training: 100%|██████████| 704/704 [1:38:49<00:00,  8.42s/it]
+Validation: 100%|██████████| 79/79 [05:13<00:00,  3.97s/it]
+Train Loss: 0.4149, Train Acc: 87.56%
+Val Loss: 0.5216, Val Acc: 83.92%
+
+Epoch 8/10
+Training: 100%|██████████| 704/704 [1:30:08<00:00,  7.68s/it]
+Validation: 100%|██████████| 79/79 [02:43<00:00,  2.07s/it]
+Train Loss: 0.3911, Train Acc: 88.42%
+Val Loss: 0.5130, Val Acc: 84.06%
+
+Epoch 9/10
+Training: 100%|██████████| 704/704 [1:15:02<00:00,  6.40s/it]
+Validation: 100%|██████████| 79/79 [02:47<00:00,  2.12s/it]
+Train Loss: 0.3792, Train Acc: 88.76%
+Val Loss: 0.5122, Val Acc: 83.96%
+
+Epoch 10/10
+Training: 100%|██████████| 704/704 [1:14:24<00:00,  6.34s/it]
+Validation: 100%|██████████| 79/79 [02:40<00:00,  2.03s/it]
+Train Loss: 0.3712, Train Acc: 88.98%
+Val Loss: 0.5115, Val Acc: 83.96%
+Testing: 100%|██████████| 157/157 [05:22<00:00,  2.05s/it]
+Test Accuracy: 84.15%

@@ -1,0 +1,101 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████| 200/200 [00:00<00:00, 13460.11it/s]
+[1mViTForImageClassification LOAD REPORT[0m from: cs-giung/vit-small-patch16-imagenet21k-augreg
+Key               | Status   |
+------------------+----------+---------------------------------------------------------------------------------------------
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([21843]) vs model:torch.Size([100])
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([21843, 384]) vs model:torch.Size([100, 384])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+/data/m25_jahanvi/Assign5/Que1.py:86: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/cuda/amp/grad_scaler.py:31: UserWarning: torch.cuda.amp.GradScaler is enabled, but CUDA is not available.  Disabling.
+  super().__init__(
+Epoch 1 Training:   0%|          | 0/391 [00:00<?, ?it/s]/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/utils/data/dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+/data/m25_jahanvi/Assign5/Que1.py:92: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():  # ← wrap forward pass
+/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/cuda/amp/autocast_mode.py:54: UserWarning: CUDA is not available or torch_xla is imported. Disabling autocast.
+  super().__init__(
+Epoch 1 Training:   1%|          | 2/391 [00:23<1:14:54, 11.55s/it]wandb: WARNING Fatal error while uploading data. Some run data will not be synced, but it will still be written to disk. Use `wandb sync` at the end of the run to try uploading.
+Epoch 1 Training:   1%|          | 2/391 [3:42:25<721:00:32, 6672.58s/it]
+Traceback (most recent call last):
+  File "/data/m25_jahanvi/Assign5/Que1.py", line 377, in <module>
+    run_baseline(trainloader, testloader, classes)
+  File "/data/m25_jahanvi/Assign5/Que1.py", line 193, in run_baseline
+    train_loss, train_acc, lora_grad_mean = train_epoch(model, trainloader, criterion, optimizer, epoch, log_lora_grads=False)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/Assign5/Que1.py", line 93, in train_epoch
+    outputs = model(inputs).logits
+              ^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/utils/generic.py", line 876, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/models/vit/modeling_vit.py", line 634, in forward
+    outputs: BaseModelOutputWithPooling = self.vit(
+                                          ^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/utils/generic.py", line 952, in wrapper
+    output = func(self, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/utils/output_capturing.py", line 248, in wrapper
+    outputs = func(self, *args, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/models/vit/modeling_vit.py", line 452, in forward
+    encoder_outputs: BaseModelOutput = self.encoder(embedding_output)
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/models/vit/modeling_vit.py", line 362, in forward
+    hidden_states = layer_module(hidden_states, **kwargs)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/modeling_layers.py", line 93, in __call__
+    return super().__call__(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/models/vit/modeling_vit.py", line 334, in forward
+    attention_output = self.attention(hidden_states_norm, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/models/vit/modeling_vit.py", line 282, in forward
+    self_attn_output, _ = self.attention(hidden_states, **kwargs)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1779, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1790, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/models/vit/modeling_vit.py", line 236, in forward
+    context_layer, attention_probs = attention_interface(
+                                     ^^^^^^^^^^^^^^^^^^^^
+  File "/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/transformers/integrations/sdpa_attention.py", line 92, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

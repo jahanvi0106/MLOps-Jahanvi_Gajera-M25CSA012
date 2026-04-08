@@ -1,0 +1,13 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████| 200/200 [00:00<00:00, 10877.77it/s]
+[1mViTForImageClassification LOAD REPORT[0m from: WinKawaks/vit-tiny-patch16-224
+Key               | Status   |
+------------------+----------+--------------------------------------------------------------------------------------------
+classifier.bias   | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000]) vs model:torch.Size([100])
+classifier.weight | MISMATCH | Reinit due to size mismatch - ckpt: torch.Size([1000, 192]) vs model:torch.Size([100, 192])
+
+Notes:
+- MISMATCH:	ckpt weights were loaded, but they did not match the original empty weight shapes.
+Epoch 1 Training:   0%|          | 0/1563 [00:00<?, ?it/s]/data/m25_jahanvi/miniconda3/envs/pfedfda/lib/python3.11/site-packages/torch/utils/data/dataloader.py:1118: UserWarning: 'pin_memory' argument is set as true but no accelerator is found, then device pinned memory won't be used.
+  super().__init__(loader)
+Epoch 1 Training:   3%|▎         | 45/1563 [01:07<37:16,  1.47s/it]
