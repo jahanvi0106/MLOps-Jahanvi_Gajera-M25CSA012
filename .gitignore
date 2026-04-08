@@ -3,7 +3,44 @@
 
 # Include log files
 !*.log
+
+# Include essential config files
 !.gitignore
+!requirements.txt
+!command.txt
 
 # Include directories that might contain log files
 !*/
+
+# Exclude large files and directories
+data/cifar-100-python.tar.gz.1
+wandb/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Exclude Docker-related build artifacts
+.docker/
+*.egg
+dist/
+build/
+
+# Exclude environment files
+.env
+.venv
+venv/
+env/
+
+# Exclude IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Keep log files
+!*.log
+!que1/
+!que1/*.log
