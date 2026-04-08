@@ -390,9 +390,9 @@ if __name__ == "__main__":
     
     from huggingface_hub import HfApi
 
-    HF_TOKEN    = "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"  # ← paste your token here
-    HF_USERNAME = "Jahanvi16"                        # ← paste your HF username here
-    REPO_NAME   = "Assign5-ViT-LoRA-CIFAR100"
+    # HF_TOKEN    = "*****"  # ← paste your token here
+    # HF_USERNAME = "****"                        # ← paste your HF username here
+    # REPO_NAME   = "*****"
 
     best_model_path = "./best_lora_model"
 
