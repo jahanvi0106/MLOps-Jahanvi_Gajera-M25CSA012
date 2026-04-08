@@ -137,57 +137,6 @@ Includes:
 * Detector performance graphs
 * Confusion matrices
 
-🔗 WandB: <your-wandb-link>
-🔗 HuggingFace: <your-hf-link>
-
----
-
-# 🚀 How to Run
-
-## Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-## Run Q1
-
-```bash
-python Que1/train.py
-python Que1/evaluate.py
-```
-
-## Run Q2
-
-```bash
-python Que2.py
-```
-
----
-
-# 📁 Repository Structure
-
-```
-Assign5/
- ├── Que1/        # ViT + LoRA experiments
- ├── Que2.py      # Adversarial attacks & detection
- ├── runa5.sh
- ├── requirements.txt
- ├── README.md
- └── Report.pdf
-```
-
----
-
-# 🎯 Key Takeaways
-
-* LoRA enables efficient fine-tuning with strong performance gains
-* Adversarial attacks expose vulnerabilities in deep models
-* IBM ART provides reliable and reproducible attack implementations
-* Detection models can effectively identify adversarial inputs
-
----
-
 
 ## 🔗 Links
 
