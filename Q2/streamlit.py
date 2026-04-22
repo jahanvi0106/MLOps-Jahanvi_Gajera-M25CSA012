@@ -15,7 +15,7 @@ st.set_page_config(page_title="CityScapes Segmentation", layout="wide")
 def load_model():
     from pipeline import UNet   # if not imported globally
     model = UNet(in_channels=3, out_channels=23)
-    model.load_state_dict(torch.load('unet_cityscapes.pth', map_location='cpu'))
+    model.load_state_dict(torch.load('unet_cityscapes.pth', map_location='cuda'))
     model.eval()
     return model
 
@@ -94,7 +94,7 @@ def page2():
                 # This assumes the mask file has the same name as the image.
                 # Adjust the path logic as needed.
                 mask_filename = file.name
-                mask_path = os.path.join("data/CameraMask", mask_filename)
+                mask_path = os.path.join("CameraMask", mask_filename)
                 if os.path.exists(mask_path):
                     true_mask = np.array(Image.open(mask_path))
                     st.image(true_mask, caption="Ground Truth", use_column_width=True)

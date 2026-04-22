@@ -89,3 +89,52 @@ Epoch 1: Loss = 0.8422, Test mIoU = 0.4167, Test mDice = 0.4772
 Epoch 2: Loss = 0.2939, Test mIoU = 0.4773, Test mDice = 0.5556
 Epoch 3: Loss = 0.2178, Test mIoU = 0.5320, Test mDice = 0.6005
 Epoch 4: Loss = 0.1822, Test mIoU = 0.5507, Test mDice = 0.6235
+Epoch 5: Loss = 0.1542, Test mIoU = 0.6008, Test mDice = 0.6715
+Epoch 6: Loss = 0.1728, Test mIoU = 0.5955, Test mDice = 0.6689
+Epoch 7: Loss = 0.1302, Test mIoU = 0.6281, Test mDice = 0.7014
+Epoch 8: Loss = 0.1170, Test mIoU = 0.6588, Test mDice = 0.7286
+Epoch 9: Loss = 0.1088, Test mIoU = 0.6702, Test mDice = 0.7468
+Epoch 10: Loss = 0.1051, Test mIoU = 0.6816, Test mDice = 0.7596
+Epoch 11: Loss = 0.1009, Test mIoU = 0.6629, Test mDice = 0.7415
+Epoch 12: Loss = 0.0941, Test mIoU = 0.7080, Test mDice = 0.7784
+Epoch 13: Loss = 0.0829, Test mIoU = 0.7306, Test mDice = 0.8097
+Epoch 14: Loss = 0.1185, Test mIoU = 0.3939, Test mDice = 0.4691
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8505
+  Network URL: http://10.6.0.91:8505
+  External URL: http://220.158.144.60:8505
+
+Train samples: 848, Test samples: 212
+Epoch 1: Loss = 0.8390, Test mIoU = 0.4261, Test mDice = 0.4844
+Epoch 2: Loss = 0.3068, Test mIoU = 0.4887, Test mDice = 0.5630
+Epoch 3: Loss = 0.2169, Test mIoU = 0.5221, Test mDice = 0.5917
+Epoch 4: Loss = 0.1841, Test mIoU = 0.5480, Test mDice = 0.6199
+Epoch 5: Loss = 0.1749, Test mIoU = 0.5895, Test mDice = 0.6621
+Epoch 6: Loss = 0.1500, Test mIoU = 0.6150, Test mDice = 0.6880
+Epoch 7: Loss = 0.1358, Test mIoU = 0.6356, Test mDice = 0.7058
+Epoch 8: Loss = 0.1273, Test mIoU = 0.6484, Test mDice = 0.7163
+Epoch 9: Loss = 0.1106, Test mIoU = 0.6744, Test mDice = 0.7513
+Epoch 10: Loss = 0.1125, Test mIoU = 0.6740, Test mDice = 0.7539
+Epoch 11: Loss = 0.1036, Test mIoU = 0.7141, Test mDice = 0.7911
+Epoch 12: Loss = 0.0967, Test mIoU = 0.6670, Test mDice = 0.7419
+Epoch 13: Loss = 0.0889, Test mIoU = 0.6994, Test mDice = 0.7715
+Epoch 14: Loss = 0.0799, Test mIoU = 0.7292, Test mDice = 0.8010
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8506
+  Network URL: http://10.6.0.91:8506
+  External URL: http://220.158.144.60:8506
+
+Train samples: 848, Test samples: 212
+Epoch 1: Loss = 0.8593, Test mIoU = 0.3614, Test mDice = 0.4191
+Epoch 2: Loss = 0.2966, Test mIoU = 0.4885, Test mDice = 0.5627
+Epoch 3: Loss = 0.2195, Test mIoU = 0.4863, Test mDice = 0.5650
