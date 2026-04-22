@@ -1,0 +1,91 @@
+Train samples: 848, Test samples: 212
+Train samples: 848, Test samples: 212
+Epoch 1: Loss = 0.8532, Test mIoU = 0.3610, Test mDice = 0.4206
+Epoch 2: Loss = 0.3006, Test mIoU = 0.4942, Test mDice = 0.5690
+Epoch 3: Loss = 0.2145, Test mIoU = 0.5322, Test mDice = 0.6010
+Epoch 4: Loss = 0.1915, Test mIoU = 0.5509, Test mDice = 0.6210
+Epoch 5: Loss = 0.1719, Test mIoU = 0.5850, Test mDice = 0.6592
+Epoch 6: Loss = 0.1533, Test mIoU = 0.6114, Test mDice = 0.6840
+Train samples: 848, Test samples: 212
+Train samples: 848, Test samples: 212
+Train samples: 848, Test samples: 212
+Train samples: 848, Test samples: 212
+Train samples: 848, Test samples: 212
+Epoch 1: Loss = 0.8600, Test mIoU = 0.3847, Test mDice = 0.4409
+Epoch 2: Loss = 0.2951, Test mIoU = 0.5007, Test mDice = 0.5747
+Epoch 3: Loss = 0.2192, Test mIoU = 0.5230, Test mDice = 0.5937
+Epoch 4: Loss = 0.1836, Test mIoU = 0.5664, Test mDice = 0.6389
+Epoch 5: Loss = 0.1816, Test mIoU = 0.5776, Test mDice = 0.6499
+Epoch 6: Loss = 0.1552, Test mIoU = 0.6136, Test mDice = 0.6834
+Epoch 7: Loss = 0.1317, Test mIoU = 0.6225, Test mDice = 0.6965
+Epoch 8: Loss = 0.1184, Test mIoU = 0.6547, Test mDice = 0.7237
+Epoch 9: Loss = 0.1161, Test mIoU = 0.6613, Test mDice = 0.7340
+Epoch 10: Loss = 0.1148, Test mIoU = 0.6515, Test mDice = 0.7316
+Epoch 11: Loss = 0.1063, Test mIoU = 0.7003, Test mDice = 0.7734
+Epoch 12: Loss = 0.0941, Test mIoU = 0.6945, Test mDice = 0.7683
+Epoch 13: Loss = 0.0866, Test mIoU = 0.7255, Test mDice = 0.8000
+Epoch 14: Loss = 0.0991, Test mIoU = 0.6322, Test mDice = 0.7114
+Epoch 15: Loss = 0.0982, Test mIoU = 0.7193, Test mDice = 0.7929
+Training completed.
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8504
+  Network URL: http://10.6.0.91:8504
+  External URL: http://220.158.144.60:8504
+
+[31m──[0m[31m────────────────────────[0m[31m [0m[1;31mTraceback [0m[1;2;31m(most recent call last)[0m[31m [0m[31m─────────────────────────[0m[31m──[0m
+[31m [0m [2m/home/m25csa012/miniconda3/envs/sentAnls/lib/python3.13/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2mime/scriptrunner/[0m[1mexec_code.py[0m:129 in exec_func_with_error_handling                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/m25csa012/miniconda3/envs/sentAnls/lib/python3.13/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2mime/scriptrunner/[0m[1mscript_runner.py[0m:689 in code_to_exec                                [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/m25csa012/m25csa012_major/Q2/[0m[1mstreamlit.py[0m:20 in <module>                       [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 17 [0m[2m│   [0mmodel.eval()                                                               [31m [0m
+[31m [0m   [2m 18 [0m[2m│   [0m[94mreturn[0m model                                                               [31m [0m
+[31m [0m   [2m 19 [0m                                                                               [31m [0m
+[31m [0m [31m❱ [0m 20 model = [1;4mload_model()[0m                                                           [31m [0m
+[31m [0m   [2m 21 [0m                                                                               [31m [0m
+[31m [0m   [2m 22 [0m[2m# ---------- Helper functions ----------[0m                                       [31m [0m
+[31m [0m   [2m 23 [0m[94mdef[0m[90m [0m[92mpreprocess_image[0m(image):                                                   [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/m25csa012/miniconda3/envs/sentAnls/lib/python3.13/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2mime/caching/[0m[1mcache_utils.py[0m:281 in __call__                                           [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/m25csa012/miniconda3/envs/sentAnls/lib/python3.13/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2mime/caching/[0m[1mcache_utils.py[0m:326 in _get_or_create_cached_value                        [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/m25csa012/miniconda3/envs/sentAnls/lib/python3.13/site-packages/streamlit/runt[0m [31m [0m
+[31m [0m [2mime/caching/[0m[1mcache_utils.py[0m:385 in _handle_cache_miss                                 [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m [2m/home/m25csa012/m25csa012_major/Q2/[0m[1mstreamlit.py[0m:15 in load_model                     [31m [0m
+[31m [0m                                                                                      [31m [0m
+[31m [0m   [2m 12 [0m[2m# ---------- Load model (cached) ----------[0m                                    [31m [0m
+[31m [0m   [2m 13 [0m[1;95m@st[0m.cache_resource                                                             [31m [0m
+[31m [0m   [2m 14 [0m[94mdef[0m[90m [0m[92mload_model[0m():                                                              [31m [0m
+[31m [0m [31m❱ [0m 15 [2m│   [0mmodel = [1;4mUNet[0m(in_channels=[94m3[0m, out_channels=[94m23[0m)                               [31m [0m
+[31m [0m   [2m 16 [0m[2m│   [0mmodel.load_state_dict(torch.load([33m'[0m[33munet_cityscapes.pth[0m[33m'[0m, map_location=[33m'[0m[33mcpu[0m[33m'[0m [31m [0m
+[31m [0m   [2m 17 [0m[2m│   [0mmodel.eval()                                                               [31m [0m
+[31m [0m   [2m 18 [0m[2m│   [0m[94mreturn[0m model                                                               [31m [0m
+[31m────────────────────────────────────────────────────────────────────────────────────────[0m
+[1;91mNameError: [0mname [32m'UNet'[0m is not defined
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8507
+  Network URL: http://10.6.0.91:8507
+  External URL: http://220.158.144.60:8507
+
+Train samples: 848, Test samples: 212
+Epoch 1: Loss = 0.8422, Test mIoU = 0.4167, Test mDice = 0.4772
+Epoch 2: Loss = 0.2939, Test mIoU = 0.4773, Test mDice = 0.5556
+Epoch 3: Loss = 0.2178, Test mIoU = 0.5320, Test mDice = 0.6005
+Epoch 4: Loss = 0.1822, Test mIoU = 0.5507, Test mDice = 0.6235

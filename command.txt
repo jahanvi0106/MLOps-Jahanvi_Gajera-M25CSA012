@@ -14,3 +14,5 @@ ln -s /usr/bin/python3 /usr/bin/python
 CUDA_VISIBLE_DEVICES=2 python preprocess_gpu.py
 
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+streamlit run streamlit.py >> question2.log

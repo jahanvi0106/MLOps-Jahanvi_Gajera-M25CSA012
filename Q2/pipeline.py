@@ -213,7 +213,7 @@ for epoch in range(num_epochs):
             images, masks = images.to(device), masks.to(device)
             outputs = model(images)
             preds = torch.argmax(outputs, dim=1)   # (B, H, W)
-            mIoU, mDice = compute_metrics(preds.cpu(), masks.cpu(), num_classes=23)
+            mIoU, mDice = compute_metrics(preds.cuda(), masks.cuda(), num_classes=23)
             if not np.isnan(mIoU):
                 all_mious.append(mIoU)
             if not np.isnan(mDice):

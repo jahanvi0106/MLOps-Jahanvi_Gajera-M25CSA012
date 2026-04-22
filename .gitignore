@@ -70,7 +70,6 @@ mlflow.log
 
 # Logs
 logs/
-*.log
 fastapi.log
 
 # Database files
