@@ -1,0 +1,17 @@
+# Core ML & Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Data handling & image processing
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# Utilities
+tqdm>=4.65.0
+gdown>=4.7.0
+
+# Metrics & visualisation
+matplotlib>=3.7.0
+
+# Deployment
+streamlit>=1.25.0

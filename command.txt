@@ -1,0 +1,16 @@
+docker build -t translator .
+docker run -v $(pwd):/app translator
+
+
+docker run -it  -v $(pwd):/app translator /bin/bash
+apt-get update
+apt-get install -y python3
+
+ln -s /usr/bin/python3 /usr/bin/python
+
+!pip install torch torchvision matplotlib tqdm gdown pillow numpy
+
+
+CUDA_VISIBLE_DEVICES=2 python preprocess_gpu.py
+
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
